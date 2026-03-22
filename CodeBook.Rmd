@@ -1,0 +1,56 @@
+---
+title: "Code Book"
+author: "Keith B"
+date: "2026-03-22"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## General Information
+
+The script produces a file containing 68 columns and 180 rows of data.
+
+## Subject Column
+
+The subjects are the people who participated in the experiment. There are 30 subjects, and they are identified only by number.
+
+## Activity Column
+
+Each subject performed six activities: 
+
+- Walking
+- Walking Upstairs
+- Walking Downstairs
+- Sitting
+- Standing
+- Laying (lying down)
+
+Each row in the column identifies the activity performed by the subject identified in the first column.
+
+## Data Columns
+
+There are 66 data columns. Of these, 33 are for the means of various measurements and 33 are for the standard deviations. The original data contained many more measurements, direct and derived.  The 66 shown here are those considered relevant for the analysis to be conducted.
+
+Each mean is matched to a standard deviation for each measurement.
+
+Twenty of the 33 measurements are from the accelerometer and the remaining thirteen are from the gyroscope. Each X, Y, and Z component of the measurement is a separate column.
+
+1. tBodyAcc-XYZ: means and standard deviations from the accelerometer. (6 columns) 
+
+2. tGravityAcc-XYZ: accelerations adjusted for gravity. (6 columns)
+
+3. tBodyAccJerk-XYZ: computed "jerk" compoments. (6 columns)
+
+4. tBodyGyro-XYZ: gyroscope readings. (6 columns)
+
+5. tBodyGyroJerk-XYZ: gyroscope "jerk" readings. (6 columns)
+
+6. tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag: not entirely clear what these are. (10 total)
+
+7. fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccMag, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag: these are from Fourier transforms applied to the data. (26 total)
+
+Thus there is a total of 66 data columns.
+
+
