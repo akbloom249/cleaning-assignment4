@@ -62,3 +62,7 @@ The script *run_analysis.R* contains the commands needed to create the final dat
 The comments in the script should be sufficient to describe the steps needed to create the final data file. When comparing the actions in the script to the five steps in the assignment statement, note that the script performs the step 1 and at the same time creates the final "tidy" data set at the end of the process. Since the "y" and "subject" files refer only to the "x" files in their respective "test" and "train" directories, it was desirable to merge these files and apply the column names and labels before merging "test" and "train" together.
 
 The final step of the script is to save the final data file in the current directory under the name *HAR_Summary.txt.*
+
+## Reading the Data File
+
+The *CodeBook.Rmd* file contains descriptions of the variables in the final data file. To read the file back into R, use the command `read.table("HAR_Summary.txt", header = TRUE)`.
